@@ -1,30 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita')
+
 *{
 	padding: 0;
 	margin:0;
 }
 
 header{
-	background-color: #8790E8;
+	background-image: url("http://www.planwallpaper.com/static/images/cool-background.jpg");
+	width: auto;
+	padding: 3em;
 }
 
-img{
-	width: 100%; 
+h1{
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+}
+
+hr{
+	border: none;
+	height: 3px;
+	background-color: black;
+	width: 5em;
+	/*2em top an bottom and auto is to center horizontally*/
+	margin: 1em auto;
+}
+
+mg{
+	/*width: 100%; or*/
+	/*match paragraph width*/
+	width: 30em;
 }
 
 body{
-	padding: 20px;
+	padding: 10px;
+	/*Minimum font size to use: 1em = 16px*/
+	font-size: 16px; 
+	margin-left: 3em;
+	margin-right: 3em;
 }
 
 a{
 	color: #8790E8;
+	/*Important declaration to avoid having 'standard links > hard blue underlined*/
 	text-decoration: none;
+	/*Better to use border bottom inseated of underline, it doesn't cross the base line of the text*/
+	border-bottom: 1px solid #000;
+	padding-bottom: 2px;
+	color: #000;
+
 }
 
 nav a {
-	color:#ffffff;
-	font-style:italic;
-	margin-right: 20px;
-	font-size: 13pt;
+	color:white;
+	/*font-style:italic;*/
+	margin-right: 30px;
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 600;
+	/*curning - space between letters*/
+	letter-spacing: 1px;
+	border-bottom: none;
 }
 
 footer{
@@ -35,9 +70,18 @@ footer{
 }
 
 h2{
-	color: #8790E8
+	color: black;
 }
 
 h2, h3, h4{
 	margin: 20px 0;
+}
+
+p{
+	/*font-family: */
+	font-size: 1em;
+	/*width should body font size * 30 (480px or 30em) */
+	/*width: 30em;*/
+	margin: 2em auto;
+	line-height: 1.5em;
 }
