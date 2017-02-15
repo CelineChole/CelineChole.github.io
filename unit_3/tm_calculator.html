@@ -17,80 +17,71 @@
 	<!-- <div class="progress"><progress value="1" max="7"></progress></div> -->			
 	</header>				
 		<!-- <img src="images/WorldMap.jpg" title="Map of the world" alt="Map of the world"> -->
+	<section id="Quote">
+		<h2>Quote</h2>
+		<form>
+			<h4>Currency</h4>
+			<p>Please select your currency:</p>
+			<!-- Drop down list: EUR, GBP, USD -->
+			<select>
+				<option>EUR</option>
+				<option>USD</option>
+				<option>GBP</option>
+			</select>
 
-		
-	
+			<h4>Priority</h4>
+			<p>Are you claiming a priority?</p>
+			<!-- Yes/no check box -->
+			<!-- A table would be good in order to have the option on the same line -->
+			<div class="checkbox">
+				<label>Yes</label><input type="radio" name="Yes">
+				<label>No</label><input type="radio" name="no">
+			</div>
 
-	<a name="Quote"></a>
-	<h2>Quote</h2>
+			<h4>Country</h4>
+			<P>Select your countries:</P>
+			<!-- Country list - drop-down menu -->
+			<select multiple>
+				<option>Country 1</option>
+				<option>Country 2</option>
+				<option>Country 3</option>
+				<option>Country 4</option>
+				<option>Country 5</option>
+			</select>
 
-	<h4>Currency</h4>
-	<p>Please select your currency:</p>
-	<!-- Drop down list: EUR, GBP, USD -->
-	<div>	
-		<select>
-			<option>EUR</option>
-			<option>USD</option>
-			<option>GBP</option>
-		</select>
-	</div>
+			<h4>Classes</h4>
+			<!-- Numeric value text box -->
+			<p>Number of classes:</p>
+			<input type="number">
 
-	<h4>Priority</h4>
-	<p>Are you claiming a priority?</p>
-	<!-- Yes/no check box -->
-	<!-- A table would be good in order to have the option on the same line -->
-	<div class="checkbox">
-		<label><input type="checkbox" name="Yes">Yes</label>
-	</div>
-	<div class="checkbox">
-		<label><input type="checkbox" name="no">No</label>
-	</div>
-
-	<h4>Country</h4>
-	<P>Select your countries:</P>
-	<!-- Country list - drop-down menu -->
-	<div>
-		<select multiple>
-			<option>Country 1</option>
-			<option>Country 2</option>
-			<option>Country 3</option>
-			<option>Country 4</option>
-			<option>Country 5</option>
-		</select>
-	</div>
-	<h4>Classes</h4>
-	<!-- Numeric value text box -->
-	<p>Number of classes:</p>
-	<textarea></textarea>
-
-	<h4>Export Quote</h4>
-	<p>Select your format</p>
-	<div>
-		<table>
-			<button>PDF</button>
-			<button>Email</button>
-			<button>Excel</button>
-		</table>
-	</div>
-
-	<a name="About"></a>
-	<h2>About us</h2>
-	<img src="images\team.jpg" title="Team Picture" alt="Team Picture">
-	<p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-	<a name="Contact"></a>
-	<h2>Contact us</h2>
-	<p>Got questions? <a href="mailto:wonderful@team.com">Email us</a></p>
-
-	<p><a href="#">Go to top</a></p>
+			<h4>Export Quote</h4>
+			<p>Select your format</p>
+			<select>
+				<input type="radio" value="PDF">
+				<input type="radio" value="Email">
+				<input type="radio" value="Excel">
+			</select>
+			<input type="submit" value="submit">
+		</form>
+	</section>
+	<section id="About">
+		<h2>About us</h2>
+		<img src="images/Team.jpg" title="Team Picture" alt="Team Picture">
+		<p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	<section id="Contact">
+		<h2>Contact us</h2>
+		<p>Got questions? <a href="mailto:wonderful@team.com">Email us</a></p>
+	</section>
+	<a href="#">Go to top</a>
 	
 	<footer>
-		<p>Disclaimer</p>
+		<h2>Disclaimer</h2>
 		<P>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
