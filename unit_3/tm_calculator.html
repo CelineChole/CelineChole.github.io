@@ -33,9 +33,10 @@
 			<p>Are you claiming a priority?</p>
 			<!-- Yes/no check box -->
 			<!-- A table would be good in order to have the option on the same line -->
-			<div class="checkbox">
-				<label>Yes</label><input type="radio" name="Yes">
-				<label>No</label><input type="radio" name="no">
+			<div>
+				<input type="radio" name="priority" value="Yes" id="prio-yes"><label for="prio-yes">Yes</label>
+				<br>
+				<input type="radio" name="priority" value="No" id="prio-no"><label for="prio-no">No</label>
 			</div>
 
 			<h4>Country</h4>
@@ -56,12 +57,12 @@
 
 			<h4>Export Quote</h4>
 			<p>Select your format</p>
-			<select>
-				<input type="radio" value="PDF">
-				<input type="radio" value="Email">
-				<input type="radio" value="Excel">
-			</select>
-			<input type="submit" value="submit">
+				<label>PDF</label><input type="radio" value="PDF">
+				<label>Email</label><input type="radio" value="Email">
+				<label>Excel</label><input type="radio" value="Excel">
+			
+			<p><input type="submit" value="Create Quote"></p>
+
 		</form>
 	</section>
 	<section id="About">
