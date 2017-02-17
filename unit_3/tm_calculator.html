@@ -15,34 +15,42 @@
 			<a href="#Contact">Contact us</a>
 		</nav>
 	<!-- <div class="progress"><progress value="1" max="7"></progress></div> -->			
-	</header>				
+	</header>
+	<br>				
 		<!-- <img src="images/WorldMap.jpg" title="Map of the world" alt="Map of the world"> -->
+	<section>
+		<fieldset>
+			<legend>Personal Information:</legend>
+			First name:<br>
+			<input type="text" name="firstname"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			Email:<br>
+			<input type="email" name="email">
+		</fieldset>
+	</section>
+
 	<section id="Quote">
 		<h2>Quote</h2>
 		<form>
-			<h4>Currency</h4>
-			<p>Please select your currency:</p>
+			<h3>Currency</h3>
+			<p>Please select your currency:<br>
 			<!-- Drop down list: EUR, GBP, USD -->
 			<select>
 				<option>EUR</option>
 				<option>USD</option>
 				<option>GBP</option>
-			</select>
+			</select></p>
 
-			<h4>Priority</h4>
-			<p>Are you claiming a priority?</p>
-			<!-- Yes/no check box -->
-			<!-- A table would be good in order to have the option on the same line -->
-			<div>
+			<h3>Priority</h3>
+			<p>Are you claiming a priority?<br>
 				<input type="radio" name="priority" value="Yes" id="prio-yes"><label for="prio-yes">Yes</label>
 				<br>
 				<input type="radio" name="priority" value="No" id="prio-no"><label for="prio-no">No</label>
-			</div>
+			</p><br>
 
-			<h4>Country</h4>
-			<P>Select your countries:</P>
-			<!-- Country list - drop-down menu -->
-			<select multiple>
+			If your are claiming a priority, please select your country:<br>
+			<select single>
 				<option>Country 1</option>
 				<option>Country 2</option>
 				<option>Country 3</option>
@@ -50,18 +58,30 @@
 				<option>Country 5</option>
 			</select>
 
-			<h4>Classes</h4>
-			<!-- Numeric value text box -->
-			<p>Number of classes:</p>
-			<input type="number">
+			<h3>Country</h3>
+			<P>Select your countries:<br>
+			<!-- Country list - drop-down menu -->
+			<select multiple>
+				<option>Country 1</option>
+				<option>Country 2</option>
+				<option>Country 3</option>
+				<option>Country 4</option>
+				<option>Country 5</option>
+			</select></P>
 
-			<h4>Export Quote</h4>
+			<h3>Classes</h3>
+			<!-- Numeric value text box -->
+			Number of classes:<br>
+			<input type="number" value="1">
+
+			<h3>Export Quote</h3>
 			<p>Select your format</p>
-				<label>PDF</label><input type="radio" value="PDF">
-				<label>Email</label><input type="radio" value="Email">
-				<label>Excel</label><input type="radio" value="Excel">
+				<input type="radio" name="exportFormat" value="PDF" id="export-PDF"><label for="export-PDF">PDF</label>
+				<input type="radio" name="exportFormat" value="Excel" id="export-excel"><label for="export-excel">Excel</label>
+				<input type="radio" name="exportFormat" value="Email" id="export-email"><label for="export-email">Email</label>
 			
-			<p><input type="submit" value="Create Quote"></p>
+			<p><input type="submit" value="Create Quote">
+			<input type="reset" name="reset"></p>
 
 		</form>
 	</section>
@@ -80,7 +100,9 @@
 		<p>Got questions? <a href="mailto:wonderful@team.com">Email us</a></p>
 	</section>
 	<a href="#">Go to top</a>
-	
+	<br>
+	<br>
+	<br>
 	<footer>
 		<h2>Disclaimer</h2>
 		<P>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
