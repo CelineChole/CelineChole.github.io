@@ -2,19 +2,24 @@
 <html>
 <head>
 	<title>TM Calculator</title>
-	<h1>Trade Mark Filing Calculator</h1>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<hr>
+
+<body>
 	<div id="wrapper">
 	<header>
+		<h1>Trade Mark Filing Calculator</h1>
+	</header>
+	<hr>
+
+	<div id="header">
 		<nav>
 			<a href="#Quote">Quote</a>
 			<a href="#About">About us</a>
 			<a href="#Contact">Contact us</a>
 		</nav>
 	<!-- <div class="progress"><progress value="1" max="7"></progress></div> -->			
-	</header>
+	</div>
 	<br>				
 		<!-- <img src="images/WorldMap.jpg" title="Map of the world" alt="Map of the world"> -->
 	<section>
@@ -30,7 +35,6 @@
 	</section>
 
 	<section id="Quote">
-	<fieldset>
 		<legend><h2>Quote</h2></legend>
 		<form>
 			<h3>Currency</h3>
@@ -51,6 +55,7 @@
 
 			If your are claiming a priority, please select your country:<br>
 			<select single>
+				<option>---------</option>
 				<option>Country 1</option>
 				<option>Country 2</option>
 				<option>Country 3</option>
@@ -82,7 +87,6 @@
 			
 			<p><input type="submit" value="Create Quote">
 			<input type="reset" name="reset"></p>
-		</fieldset>
 		</form>
 	</section>
 	<section id="About">
@@ -103,14 +107,18 @@
 	<br>
 	<br>
 	<br>
-	<footer>
-		<h2>Disclaimer</h2>
+	
+		<!-- <h2>Disclaimer</h2>
 		<P>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P> -->
+	
+	<footer>
+	<a href="#Quote">Quote</a> | <a href="#About">About us</a> | <a href="#Contact">Contact us</a>
+	<p>Céline Cholé</p>
 	</footer>
 	</div>
 </body>

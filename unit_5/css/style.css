@@ -7,7 +7,7 @@
 	/*box-sizing: border-box;*/
 }
 
-header{
+#header{
 	background-image: url("http://www.planwallpaper.com/static/images/cool-background.jpg");
 	width: auto;
 	padding: 3em;
@@ -15,7 +15,10 @@ header{
 
 #wrapper{
 	margin: 0 auto;
-	width: 900px;
+	width: 1080px;
+	/*Try this*/
+	/*margin-left: auto;
+	margin-right: auto;*/
 }
 
 h1{
@@ -70,11 +73,19 @@ nav a {
 	border-bottom: none;
 }
 
+nav a:hoover {
+	background-color: #dd0000;
+}
+
 footer{
 	background-color: #cccccc;
 	padding: 0.5em;
-	text-align: left;
-	font-style: italic;
+	clear: both;
+}
+
+footer p{
+	float: right;
+	clear: both;
 }
 
 h2{
@@ -94,3 +105,5 @@ p{
 	margin: 2em auto;
 	line-height: 1.5em;
 }
+
+/*If ul needs to add padding left 20px*/
