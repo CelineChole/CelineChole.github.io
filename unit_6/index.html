@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TM Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div id="wrapper">
+	<header>
+		<h1>Trade Mark Filing Calculator</h1>
+	</header>
+	<hr>
+
+	<div id="header">
+		<nav>
+			<a href="#Quote">Quote</a>
+			<a href="#About">About us</a>
+			<a href="#Contact">Contact us</a>
+		</nav>
+	<!-- <div class="progress"><progress value="1" max="7"></progress></div> -->			
+	</div>
+	<br>				
+		<!-- <img src="images/WorldMap.jpg" title="Map of the world" alt="Map of the world"> -->
+	<section>
+		<fieldset>
+			<legend>Personal Information:</legend>
+			First name:<br>
+			<input type="text" name="firstname"><br>
+			Last name:<br>
+			<input type="text" name="lastname"><br>
+			Email:<br>
+			<input type="email" name="email">
+		</fieldset>
+	</section>
+
+	<section id="Quote">
+		<legend><h2>Quote</h2></legend>
+		<form>
+			<h3>Currency</h3>
+			<p>Please select your currency:<br>
+			<!-- Drop down list: EUR, GBP, USD -->
+			<select>
+				<option>EUR</option>
+				<option>USD</option>
+				<option>GBP</option>
+			</select></p>
+
+			<h3>Priority</h3>
+			<p>Are you claiming a priority?<br>
+				<input type="radio" name="priority" value="Yes" id="prio-yes"><label for="prio-yes">Yes</label>
+				<br>
+				<input type="radio" name="priority" value="No" id="prio-no"><label for="prio-no">No</label>
+			</p><br>
+
+			If your are claiming a priority, please select your country:<br>
+			<select single>
+				<option>---------</option>
+				<option>Country 1</option>
+				<option>Country 2</option>
+				<option>Country 3</option>
+				<option>Country 4</option>
+				<option>Country 5</option>
+			</select>
+
+			<h3>Country</h3>
+			<P>Select your countries:<br>
+			<!-- Country list - drop-down menu -->
+			<select multiple>
+				<option>Country 1</option>
+				<option>Country 2</option>
+				<option>Country 3</option>
+				<option>Country 4</option>
+				<option>Country 5</option>
+			</select></P>
+
+			<h3>Classes</h3>
+			<!-- Numeric value text box -->
+			Number of classes:<br>
+			<input type="number" value="1">
+
+			<h3>Export Quote</h3>
+			<p>Select your format</p>
+				<input type="radio" name="exportFormat" value="PDF" id="export-PDF"><label for="export-PDF">PDF</label>
+				<input type="radio" name="exportFormat" value="Excel" id="export-excel"><label for="export-excel">Excel</label>
+				<input type="radio" name="exportFormat" value="Email" id="export-email"><label for="export-email">Email</label>
+			
+			<p><input type="submit" value="Create Quote">
+			<input type="reset" name="reset"></p>
+		</form>
+	</section>
+	<section id="About">
+		<h2>About us</h2>
+		<img src="images/Team.jpg" title="Team Picture" alt="Team Picture" id="teamImage">
+		<p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</section>
+	</br>
+	<section id="Contact">
+		<h2>Contact us</h2>
+		<p>Got questions? <a href="mailto:wonderful@team.com">Email us</a></p>
+	</section>
+	<a href="#">Go to top</a>
+	<br>
+	<br>
+	<br>
+	
+		<!-- <h2>Disclaimer</h2>
+		<P>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P> -->
+	
+	<footer>
+	<a href="#Quote">Quote</a> | <a href="#About">About us</a> | <a href="#Contact">Contact us</a>
+	<p>Céline Cholé</p>
+	</footer>
+	</div>
+</body>
+</html>

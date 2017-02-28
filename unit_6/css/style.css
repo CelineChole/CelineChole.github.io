@@ -7,11 +7,11 @@
 	/*box-sizing: border-box;*/
 }
 
-#header{
+/*#header{
 	background-image: url("http://www.planwallpaper.com/static/images/cool-background.jpg");
 	width: auto;
 	padding: 3em;
-}
+}*/
 
 #wrapper{
 	margin: 0 auto;
@@ -52,18 +52,24 @@ body{
 
 a{
 	color: #8790E8;
-	/*Important declaration to avoid having 'standard links > hard blue underlined*/
 	text-decoration: none;
 	/*Better to use border bottom inseated of underline, it doesn't cross the base line of the text*/
 	border-bottom: 1px solid #000;
 	padding-bottom: 2px;
 	color: #000;
+}
 
+nav{
+	background-color: #cccccc;
+	font-family: 'Sansita', sans-serif;
+}
+
+a:hoover{
+	background-color: #aaaaaa;
 }
 
 nav a {
 	color:white;
-	/*font-style:italic;*/
 	margin-right: 30px;
 	font-size: 1.3em;
 	text-transform: uppercase;
@@ -71,7 +77,7 @@ nav a {
 	/*curning - space between letters*/
 	letter-spacing: 1px;
 	border-bottom: none;
-}
+}*/
 
 nav a:hoover {
 	background-color: #dd0000;
@@ -80,10 +86,12 @@ nav a:hoover {
 footer{
 	background-color: #cccccc;
 	padding: 0.5em;
+	clear: both;
 }
 
 footer p{
 	float: right;
+	clear: both;
 }
 
 h2{
@@ -104,4 +112,15 @@ p{
 	line-height: 1.5em;
 }
 
-/*If ul needs to add padding left 20px*/
+#teamImage{
+	float: left;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
