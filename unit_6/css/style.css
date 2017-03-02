@@ -62,10 +62,12 @@ a{
 nav{
 	background-color: #cccccc;
 	font-family: 'Sansita', sans-serif;
+	padding: 0.5em;
 }
 
-a:hoover{
+a:hover{
 	background-color: #aaaaaa;
+	padding: 0.3em;
 }
 
 nav a {
@@ -79,7 +81,7 @@ nav a {
 	border-bottom: none;
 }*/
 
-nav a:hoover {
+nav a:hover {
 	background-color: #dd0000;
 }
 
@@ -108,7 +110,7 @@ p{
 	font-size: 1em;
 	/*width should body font size * 30 (480px or 30em) */
 	/*width: 30em;*/
-	margin: 2em auto;
+	margin: auto;
 	line-height: 1.5em;
 }
 
