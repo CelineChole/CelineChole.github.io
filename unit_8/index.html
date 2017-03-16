@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TM Calculator</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Trade Mark Filing Calculator</h1>
+			<!-- <hr> -->
+			<nav>
+				<a href="#Quote">Quote</a>
+				<a href="#about">About us</a>
+				<!-- <a href="#contact">Contact us</a> -->
+			</nav>		
+		</header>				
+			
+		<section class="clearfix">
+			<form>
+			<fieldset>
+				<legend>Personal Information</legend>
+				<div class="persoInfo">
+					Contact Details: <br>
+					<input type="text" name="contactDetails"><br>
+					Email:<br>
+					<input type="email" name="email">
+				</div>
+				<div class="persoInfo">
+					Client Name:<br>
+					<input type="text" name="clientname"><br>
+					File Reference:<br>
+					<input type="text" name="fileRef"><br>
+				</div>
+			</fieldset>
+		</section>
+
+		<section id="Quote">
+			<legend><h2>Quote</h2></legend>
+				<h3>Currency</h3>
+				<p>Please select your currency:<br>
+				<!-- Drop down list: EUR, GBP, USD -->
+				<select>
+					<option>EUR</option>
+					<option>USD</option>
+					<option>GBP</option>
+				</select></p>
+
+				<h3>Priority</h3>
+				<p>Are you claiming a priority?</p>
+					<input type="radio" name="priority" value="Yes" id="prio-yes"><label for="prio-yes">Yes</label>
+					<br>
+					<input type="radio" name="priority" value="No" id="prio-no"><label for="prio-no">No</label>
+				<p>If your are claiming a priority, please select your country:</p>
+				<select single>
+					<option>---------</option>
+					<option>Country 1</option>
+					<option>Country 2</option>
+					<option>Country 3</option>
+					<option>Country 4</option>
+					<option>Country 5</option>
+				</select>
+
+				<h3>Country</h3>
+				<P>Select your countries:<br>
+				<!-- Country list - drop-down menu -->
+				<select multiple>
+					<option>Country 1</option>
+					<option>Country 2</option>
+					<option>Country 3</option>
+					<option>Country 4</option>
+					<option>Country 5</option>
+				</select></P>
+
+				<h3>Classes</h3>
+				<!-- Numeric value text box -->
+				Number of classes:<br>
+				<input type="number" value="1">
+
+				<h3>Export Quote</h3>
+				<p>Select your format</p>
+					<input type="radio" name="exportFormat" value="PDF" id="export-PDF"><label for="export-PDF">PDF</label>
+					<input type="radio" name="exportFormat" value="Excel" id="export-excel"><label for="export-excel">Excel</label>
+					<input type="radio" name="exportFormat" value="Email" id="export-email"><label for="export-email">Email</label>
+
+				<p><input type="submit" value="Create Quote">
+				<input type="reset" name="reset"></p>
+			</form>
+		</section>
+		<section id="about" class="clearfix">
+			<h2>About us</h2>
+			<img src="images/Team.jpg" title="Team Picture" alt="Team Picture" id="teamImage">
+			<p>Ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+
+		<section id="contact-form" class="clearfix" class="floating-form">
+		<!-- <div class="contact-opener">Contact Us</div> -->
+			<div class="floating-form-heading">Got a question?</div>
+		    <div id="contact_results"></div>
+		    <div id="contact_body">
+		        <label><span>Contact Details<span class="required">*</span></span>
+		            <input type="text" name="name" id="name" required="true" class="input-field">
+		        </label>
+		        <label><span>Email <span class="required">*</span></span>
+		            <input type="email" name="email" required="true" class="input-field">
+		        </label>
+		            <label for="field5"><span>Message <span class="required">*</span></span>
+		            <textarea name="message" id="message" class="textarea-field" required="true"></textarea>
+		        </label>
+		        <label>
+		            <span>&nbsp;</span><input type="submit" id="submit_btn" value="Submit">
+		        </label>
+		    </div>
+		</section>
+		
+		<a href="#">Go to top</a>
+
+		<footer>
+			<a href="#Quote">Quote</a> | <a href="#about">About us</a>
+			<p>Céline Cholé</p>
+		</footer>
+	</div>
+</body>
+</html>

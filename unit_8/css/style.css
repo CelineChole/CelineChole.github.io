@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita')
+
+*{
+	padding: 0;
+	margin:0;
+	/*When adding padding or border it is inside*/
+	/*box-sizing: border-box;*/
+}
+
+/*header{
+	width: auto;
+	padding: 3em;
+}*/
+
+#wrapper{
+	margin: 0 auto;
+	width: 100%;
+	/*Try this*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+}
+
+h1{
+	font-family: 'Sansita', sans-serif;
+	text-align: center;
+	font-weight: 1000;
+}
+
+/*hr{
+	border: none;
+	height: 3px;
+	background-color: black;
+	width: 5em;
+	2em top an bottom and auto is to center horizontally
+	margin: 1em auto;*/
+}
+
+mg{
+	/*width: 100%; or*/
+	/*match paragraph width*/
+	width: 30em;
+}
+
+body{
+	padding: 10px;
+	/*Minimum font size to use: 1em = 16px*/
+	font-size: 14px; 
+	margin-left: 3em;
+	margin-right: 3em;
+	font-family: 'Sansita', sans-serif;
+}
+
+a{
+	color: #8790E8;
+	text-decoration: none;
+	/*Better to use border bottom inseated of underline, it doesn't cross the base line of the text*/
+	/*border-bottom: 1px solid #000;*/
+	/*padding-bottom: 2px;*/
+	color: #000;
+}
+
+nav{
+	background-color: #cccccc;
+	font-family: 'Sansita', sans-serif;
+	padding: 15px;
+	display: block;
+	margin-bottom: 1.5em;
+	margin-top: 3em;
+	text-align: center;
+}
+
+a:hover{
+    border-bottom: 1px solid black;
+    padding-top:0;
+}
+
+nav a {
+	color:white;
+	/*margin-right: 30px;*/
+	font-size: 1.3em;
+	text-transform: uppercase;
+	font-weight: 600;
+	/*curning - space between letters*/
+	letter-spacing: 1px;
+	border-bottom: none;
+	padding: 0 15px;
+	margin: 0 10px;
+}
+
+nav a:hover {
+	background-color: #aaaaaa;
+	padding: 15px;
+	border-bottom: none;
+}
+
+footer{
+	background-color: #cccccc;
+	padding: 0.5em;
+	clear: both;
+	margin-top: 1em;
+}
+
+footer p{
+	float: right;
+	clear: both;
+}
+
+h2{
+	color: black;
+	font-size: 2em;
+}
+
+h2, h3, {
+	margin: 20px 0;
+}
+
+p{
+	/*font-family: */
+	font-size: 1em;
+	/*width should body font size * 30 (480px or 30em) */
+	/*width: 30em;*/
+	margin: auto;
+	line-height: 1.5em;
+}
+
+#teamImage{
+	float: left;
+}
+
+.clearfix:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+#contact-form{
+	position: fixed;
+  	right: 0;
+ 	top: 50%;
+ 	width: 10em;
+ 	margin-top: -1.5em;
+ 	margin-bottom: 10em;
+ 	margin-right: 2em;
+ }
+ 
+ #about{
+ 	width: 980px;
+ }
+
+ .persoInfo{
+ 	float: left;
+ 	margin: 1.5%;
+ 	width: 40%;
+ }
