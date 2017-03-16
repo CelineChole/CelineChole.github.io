@@ -23,7 +23,6 @@
 h1{
 	font-family: 'Sansita', sans-serif;
 	text-align: center;
-	font-weight: 1000;
 }
 
 /*hr{
@@ -42,9 +41,9 @@ mg{
 }
 
 body{
-	padding: 10px;
+	padding: 0.5%;
 	/*Minimum font size to use: 1em = 16px*/
-	font-size: 14px; 
+	font-size: 1em; 
 	margin-left: 3em;
 	margin-right: 3em;
 	font-family: 'Sansita', sans-serif;
@@ -147,7 +146,7 @@ p{
  }
  
  #about{
- 	width: 980px;
+ 	width: 80%;
  }
 
  .persoInfo{
